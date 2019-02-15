@@ -1,0 +1,1 @@
+C:/wamp64/www/project4wp/wp-content/plugins/query-monitor/wp-content/db.php
