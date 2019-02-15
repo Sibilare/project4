@@ -28,6 +28,16 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+
+					<div class="headerlogo">
+					</div>
+					<section class="hnav">
+					<div class="hshop">shop</div>
+					<div class="hjournal">journal</div>
+					<div class="habout">about</div>
+					<div class="hfindus">find us</div>
+					</section>
+
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->

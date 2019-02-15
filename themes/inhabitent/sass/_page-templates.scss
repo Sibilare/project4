@@ -3,3 +3,9 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+#footercontainer {
+    display: flex;
+}
+.footericons {
+    flex-flow: row nowrap;
+}
