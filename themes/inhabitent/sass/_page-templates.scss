@@ -5,6 +5,7 @@
 /* Front page */
 #footercontainer {
     display: flex;
+    justify-content: space-between;
 }
 .footericons {
     flex-flow: row nowrap;

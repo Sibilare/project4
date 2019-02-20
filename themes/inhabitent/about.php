@@ -1,24 +1,23 @@
 <?php
 /**
- * The template for displaying the footer.
+ * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
-?>
+get_header(); ?>
 
-			</div><!-- #content -->
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-			<section id="aboutphon" class="site-about" role="contentinfo">
-				<div class="about-info">
+			<?php while ( have_posts() ) : the_post(); ?>
 
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .about-info -->
-			</section><!-- #aboutphon -->
-		</div><!-- #page -->
+			<?php endwhile; // End of the loop. ?>
 
-		<?php wp_footer(); ?>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-	</body>
-</html>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
