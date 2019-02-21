@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<span><?php echo fs()->get('product price') ?> </span>
+			<span><?php echo fs()->get('product price'); ?> </span>
 
 			<?php the_post_navigation(); ?>
 

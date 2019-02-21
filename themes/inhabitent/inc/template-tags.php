@@ -124,8 +124,7 @@
  function red_starter_comment_list( $comment, $args, $depth ) {
  	$GLOBALS['comment'] = $comment;
  	?>
-
- 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
+ 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>
  		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 
  			<div class="comment-author-avatar">
@@ -164,7 +163,7 @@
 
  		</article><!-- .comment-body -->
 
- 	<?php
+		<?php
 
  }
 
@@ -189,4 +188,13 @@
  		);
  		echo '</nav>';
  	}
- }
+}
+
+function inhabitent_get_latest_posts(){
+	$args = array(
+		'post_type' => 'post',
+		'posts_per_page' => 3
+	);
+	$latest_posts = get_posts($args);
+	return $latest_posts;
+}?>

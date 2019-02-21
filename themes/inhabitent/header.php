@@ -2,10 +2,12 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -13,7 +15,7 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<?php wp_head(); ?>
+		<?php wp_head(); ?>
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -32,15 +34,15 @@
 					<div class="headerlogo">
 					</div>
 					<section class="hnav">
-					<div class="hshop">shop</div>
-					<div class="hjournal">journal</div>
-					<div class="habout">about</div>
-					<div class="hfindus">find us</div>
+					<a href="" class="hshop">shop</a>
+					<a href="" class="hjournal">journal</a>
+					<a href="" class="habout">about</a>
+					<a href="" class="hfindus">find us</a>
 					</section>
 
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php wp_nav_menu(array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' )); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content"> </div>
