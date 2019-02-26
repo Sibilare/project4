@@ -345,6 +345,12 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
+#masthead {
+  width: 1024;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 blockquote,
 q {
   quotes: '' ''; }
@@ -352,6 +358,15 @@ q {
   q:before,
   q:after {
     content: ''; }
+
+.latest-entries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
 
 hr {
   background-color: #ccc;
@@ -364,7 +379,10 @@ ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: disc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 ol {
   list-style: decimal; }
@@ -381,6 +399,7 @@ dd {
   margin: 0 1.5rem 1.5rem; }
 
 img {
+  min-block-size: 25%;
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
@@ -388,6 +407,18 @@ img {
 
 table {
   margin: 0 0 1.5rem;
+  width: 100%; }
+
+.fp-inhab-journal {
+  text-align: center; }
+
+#inhab-journal {
+  background-position: relative; }
+
+.home-hero-image {
+  background-image: url("../../images/home-hero.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
   width: 100%; }
 
 /*--------------------------------------------------------------
@@ -711,8 +742,10 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-#footercontainer {
+* {
+  text-transform: uppercase; }
+
+#site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -720,8 +753,60 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+/* Front page */
+#site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.headerlogo {
+  background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+  background: fixed; }
+
+.hnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+#footercontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../../images/dark-wood.png");
+  width: auto;
+  color: white; }
+
 .footericons {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap; }
+
+.footerlogo {
+  background-image: url("../../images/logos/inhabitent-logo-text.svg");
+  background-size: 75%;
+  margin-top: 7px;
+  width: 250px;
+  background-repeat: no-repeat; }
+
+#sidebarcontainer {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }

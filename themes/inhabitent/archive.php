@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -29,6 +29,8 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
+			<?php wp_reset_postdata(); ?>
+
 
 		<?php else : ?>
 

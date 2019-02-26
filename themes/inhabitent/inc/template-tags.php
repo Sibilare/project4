@@ -197,4 +197,4 @@ function inhabitent_get_latest_posts(){
 	);
 	$latest_posts = get_posts($args);
 	return $latest_posts;
-}?>
+}

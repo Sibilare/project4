@@ -2,11 +2,14 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+* {
+  text-transform: uppercase;
+
+}
+#site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 /* Front page */
-#footercontainer {
-    display: flex;
-    justify-content: space-between;
-}
-.footericons {
-    flex-flow: row nowrap;
-}

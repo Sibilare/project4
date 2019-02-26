@@ -30,18 +30,10 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-
-					<div class="headerlogo">
-					</div>
-					<section class="hnav">
-					<a href="" class="hshop">shop</a>
-					<a href="" class="hjournal">journal</a>
-					<a href="" class="habout">about</a>
-					<a href="" class="hfindus">find us</a>
-					</section>
+					<?php wp_nav_menu ( array ('theme_location' => 'primary','menu_id' => 'primary_menu')); ?>
 
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu(array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' )); ?>
+				
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

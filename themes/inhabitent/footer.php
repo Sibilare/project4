@@ -7,6 +7,8 @@
 ?>
 			<footer  class="site-footer" role="contentinfo">
 				<section id="footercontainer">
+				
+				
 
 					<div class="contact_info">
 						<p class="text-input">Contact Info</p>

@@ -1,0 +1,17 @@
+#footercontainer {
+  display: flex;
+  justify-content: space-between;
+  background-image: url('../../images/dark-wood.png');
+  width: auto;
+  color: white;
+}
+.footericons {
+  flex-flow: row nowrap;
+}
+.footerlogo {
+  background-image: url('../../images/logos/inhabitent-logo-text.svg');
+  background-size: 75%;
+  margin-top: 7px;
+  width: 250px;
+  background-repeat: no-repeat;
+}

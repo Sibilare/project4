@@ -1,0 +1,16 @@
+#site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.headerlogo {
+  background-image: url('../../images/logos/inhabitent-logo-tent.svg');
+  background:fixed;
+  
+}
+.hnav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}

@@ -7,16 +7,7 @@
 
 get_header(); ?>
 
-	<div class="shop_stuff">
-		<h1>Shop Stuff</h1>
-			<ul class="product-types"></ul>
-				<a><li>Do</li></a>
-				<a><li>Eat</li></a>
-				<a><li>Sleep</li></a>
-				<a><li>Wear</li></a>
-			</ul>
-	</div>
-		<div id="primary" class="content-area">	
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -33,6 +24,7 @@ get_header(); ?>
 
 				<?php
 					get_template_part( 'template-parts/content' );
+					$query = new WP_Query( array( 'product' => 'template-parts/content' ) );
 				?>
 
 			<?php endwhile; ?>
@@ -44,13 +36,6 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
-		<div class="products">
-			<?php 
-				$args = array ('post_per_page' =>16);
-				$product_posts = get_post($args);
-			?>
-			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

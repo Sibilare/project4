@@ -11,17 +11,31 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <?php $journal_posts = inhabitent_get_latest_posts(); ?>
+    <div class='home-hero-image'> </div>
 
-        <?php foreach($journal_posts as $post) : setup_postdata($post); ?>
+<section id ="inhab-journal">
 
-        <div> 
-            <?php if(has_post_thumbnail()): ?>
-                <?php the_post_thumbnail('full');?>
-            <?php endif; ?>
-            <a href="<?php the_permalink(); ?>">Read this post</a>
-        </div>
+<h2 class="fp-inhab-journal">Inhabitent Journal</h2>
+
+<div class="latest-entries">
+
+<?php $journal_posts = inhabitent_get_latest_posts();?>
+
+<?php foreach ($journal_posts as $post): setup_postdata($post); ?>
+
+<?php if (has_post_thumbnail()): ?>
+
+<div class="thumbnail">
+
+					 <?php the_post_thumbnail('large');?>
+
+</div>
+
+				 <?php endif; ?>
+
 		<?php endforeach; ?>
+
+        
     </main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?>

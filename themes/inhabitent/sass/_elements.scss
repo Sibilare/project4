@@ -17,6 +17,10 @@ html {
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
+#masthead {
+  width: 1024;
+  display:flex;
+}
 
 blockquote,
 q {
@@ -27,7 +31,11 @@ q {
     content: '';
   }
 }
-
+.latest-entries {
+  display: flex;
+  flex-flow: row nowrap;
+  
+}
 hr {
   background-color: $color__background-hr;
   border: 0;
@@ -42,6 +50,7 @@ ol {
 
 ul {
   list-style: disc;
+  display: flex;
 }
 
 ol {
@@ -63,6 +72,7 @@ dd {
 }
 
 img {
+  min-block-size: 25%;
   height: auto; /* Make sure images are scaled correctly. */
   max-width: 100%; /* Adhere to container width. */
 }
@@ -70,4 +80,19 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
+}
+
+.fp-inhab-journal{
+text-align: center;
+}
+
+#inhab-journal {
+  background-position: relative;
+}
+
+.home-hero-image {
+background-image: url('../../images/home-hero.jpg');
+background-repeat: no-repeat;
+height: 100vh;
+width: 100%;
 }

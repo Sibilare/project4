@@ -30,7 +30,7 @@ function inhabitent_login_logo(){
 	.login h1 a {
 		background-image: url(' . $logo_url . ');
 		background-repeat: no-repeat;
-		background-size: 300px 53px;
+		background-size: 300px 153px;
 	
 	}
 	.login .button.button-primary {
@@ -46,4 +46,18 @@ function inhabitent_login_url(){
 
 }
 
-add_filter('login_headerurl', 'inhabitent_login_url'); 
+add_filter('login_headerurl', 'inhabitent_login_url');
+
+function posts_on_page ($query ){
+
+	if (is_admin() || !$query->is_main_query())
+	return;
+	if ( is_post_type_archive( 'product' ) ) {
+	$query->set( 'orderby', 'title');
+	$query->set( 'posts_per_page', 16 );
+	$query->set( 'order', 'ASC');
+	return;
+}
+}
+
+add_action( 'pre_get_posts', 'posts_on_page',1);

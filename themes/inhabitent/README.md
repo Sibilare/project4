@@ -1,21 +1,16 @@
-# RED Starter
+I N H A B I T E N T
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+Used Wordpress, custom pages, post types and taxonmoies were made.  Used a starter theme to have all the starting files in place and were vastly edited to adhere to the final output.
 
-## Installation
+Project also included:
+HTML5/CSS
+SASS
+PHP
+Wordpress
+Gulp
+Visualcode
+Javascript
+Creating widgets and plugins for Wordpress
+Used a variety of plugins made by other vendors
 
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `redstarter-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+It was a challenging project, trying to understand difference between page.php and single.php and other similarities.  Knowing when to use Wordpress to make a page and images and when to use VisualCode.  I am still interested in Wordpress
