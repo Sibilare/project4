@@ -3,7 +3,7 @@ I N H A B I T E N T
 Used Wordpress, custom pages, post types and taxonmoies were made. Used a starter theme to have all the starting files in place and were vastly edited to adhere to the final output.
 
 Project also included:
-HTML5/CSS
+HTML5/CSS3
 SASS
 PHP
 Wordpress
