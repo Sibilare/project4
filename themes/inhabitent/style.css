@@ -545,10 +545,9 @@ table {
   background-position: relative; }
 
 .home-hero-image {
-  background-image: url("../../images/home-hero.jpg");
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%; }
+  background-image: url("../../images/home-hero.jpg") no-repeat center center fixed;
+  height: 400px;
+  width: 100vh; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -871,9 +870,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-* {
-  text-transform: uppercase; }
-
 #site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -881,6 +877,22 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase; }
+
+p {
+  text-transform: initial; }
+
+h1 .entry-title {
+  color: #248a83;
+  max-width: 75%;
+  font-size: 2rem;
+  padding: 16px 20px; }
 
 /* Front page */
 #site-navigation {

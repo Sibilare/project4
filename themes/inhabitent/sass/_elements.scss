@@ -91,8 +91,8 @@ text-align: center;
 }
 
 .home-hero-image {
-background-image: url('../../images/home-hero.jpg');
-background-repeat: no-repeat;
-height: 100vh;
-width: 100%;
+background-image: url('../../images/home-hero.jpg') no-repeat center center fixed;
+height: 400px;
+width: 100vh;
+
 }

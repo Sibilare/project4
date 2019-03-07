@@ -2,14 +2,29 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-* {
-  text-transform: uppercase;
-
-}
 #site-navigation {
   display: flex;
   justify-content: space-between;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+p {
+  text-transform: initial;
+}
+
+
+h1 .entry-title {
+	color: #248a83;
+	max-width: 75%;
+	font-size: 2rem;
+	padding: 16px 20px;
+}
 
 /* Front page */
