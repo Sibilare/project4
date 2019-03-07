@@ -544,11 +544,6 @@ table {
 #inhab-journal {
   background-position: relative; }
 
-.home-hero-image {
-  background-image: url("../../images/home-hero.jpg") no-repeat center center fixed;
-  height: 400px;
-  width: 100vh; }
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -951,3 +946,65 @@ h1 .entry-title {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+
+.hero-image-header {
+  height: 100vh;
+  color: #fff; }
+
+.entry-title :nth-of-type(1) {
+  display: none; }
+
+.shop_stuff {
+  text-align: center; }
+
+li {
+  text-decoration: none; }
+
+.ap-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.product_types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.page-title {
+  display: none; }
+
+.taxonomy-description {
+  display: none; }
+
+.entry-content {
+  display: none; }
+
+.entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 100vh;
+  -ms-flex-line-pack: start;
+      align-content: flex-start; }
+
+img {
+  max-width: 20%;
+  height: 20%;
+  -ms-flex-line-pack: start;
+      align-content: flex-start; }

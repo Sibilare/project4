@@ -8,8 +8,9 @@
 get_header(); ?>
 
 <div class="shop_stuff">
-    <h1>Shop Stuff</h1>
-    <ul class="product-types"></ul>
+    <h1 class="shop_stuff">Shop Stuff</h1>
+    <div class='ap-product'>
+    <ul class="product_types"></ul>
     <a>
         <li>Do</li>
     </a>
@@ -23,6 +24,7 @@ get_header(); ?>
         <li>Wear</li>
     </a>
     </ul>
+</div>
 </div>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">

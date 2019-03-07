@@ -10,9 +10,17 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <div class='home-hero-image'> </div>
+        <!-- <div class='home-hero-image'> -->
+       <?php if (have_posts()) :
+   while (have_posts()) :
+      the_post();
+         the_content();
+   endwhile;
+endif;?>
+    
+    <!-- </div> -->
 
-            <section id="shop-stuf">
+            <section id="shop-stuff">
                 <h2 class="fp-shop-stuff">
                 </h2>
                 <div class="fp-products">
@@ -34,7 +42,7 @@ get_header();
 
             <div class="thumbnail">
 
-                <?php the_post_thumbnail('large'); ?>
+                <?php the_post_thumbnail('large');?>
 
                 <?php endif; ?>
 

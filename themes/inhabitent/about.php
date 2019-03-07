@@ -9,7 +9,8 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        <div>
+        
+        <div class="about-posts">
         
         <?php echo cfs()->get(about); ?>
          <?php while (have_posts()) : the_post(); ?>
